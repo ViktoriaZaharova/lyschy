@@ -1,0 +1,8 @@
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 576px) {
+  .col-xs-12 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}

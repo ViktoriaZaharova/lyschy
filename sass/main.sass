@@ -1,0 +1,58 @@
+@import "vars"
+
+// advantages
+.advantages
+  margin: 128px 0 32px
+
+.advantages-box
+  width: 100%
+  display: flex
+  align-items: flex-start
+  padding: 32px 0 0
+  
+  &__icon
+    width: 63px
+    height: 63px
+    min-width: 63px
+    margin: 0 32px 0 0
+    @include d-flex
+    img
+      width: 100%
+  .box-text
+    margin: 16px 0 0
+
+
+// about brand
+.about-brand-box
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 64px 0 0
+  padding: 64px 0 0
+  &::before
+    left: 50%
+    transform: skew(30deg) translate(-50%,0)
+  h3
+    width: 50%
+  &__title
+    padding: 0 32px 0 0
+    color: $gray
+    text-align: right
+  &__text
+    padding: 0 0 0 32px      
+
+// start brand
+.start-brand-wrapper
+  margin: 0 auto -128px
+  max-width: 1520px
+  width: 100%
+  background: url('../img/decor-bg.svg') no-repeat center
+  background-size: cover
+  padding: 128px 64px
+  position: relative
+  z-index: 1
+  .logo
+    margin: 0 auto 32px
+    max-width: 508px
+
