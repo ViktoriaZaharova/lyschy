@@ -11,8 +11,8 @@
   <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 
   <!-- add plugins css -->
-  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/fancybox.css">
   <!-- add plugins css end -->
 
   <link rel="stylesheet" href="css/style.css">
@@ -25,14 +25,65 @@
 <body>
 
   <header>
-    <div class="container">
+    <div class="container-fluid">
+      <div class="distribution-name">
+        <a href="#" target="_blank">freeridermoto</a>
+        <span>– дистрибьютор Lyschy в РФ</span>
+      </div>
 
+      <a href="https://freeridermoto.ru" class="link-web">freeridermoto.ru</a>
+      <a href="mailto:opt@freeridermoto.ru" class="link-web">opt@freeridermoto.ru</a>
+
+      <a href="tel:+79265559728" class="phone-link link-messanger">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#phone-icon"></use>
+        </svg>
+        <span>+7 926 555-97-28</span>
+      </a>
+
+      <a href="https://wa.me/79265559728" class="whatsapp-link link-messanger">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#whatsapp-icon"></use>
+        </svg>
+      </a>
+      <a href="https://wa.me/79265559728" class="whatsapp-link link-messanger">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#telegram-icon"></use>
+        </svg>
+      </a>
+
+      <a href="tel:+79265559728" class="callback-link link-messanger open_modal">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#callback-icon"></use>
+        </svg>
+        <span>Заказать звонок</span>
+      </a>
     </div>
   </header>
 
   <main class="home">
     <div class="container">
+      <div class="home-content">
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        <h1>Бренд профессиональной мотоэкипировки
+          с настоящей историей</h1>
+        <div class="box-text text-big">
+          <p>Успей стать первым дилером
+            в своем регионе</p>
+        </div>
 
+        <div class="btn-group">
+          <a href="#callbackModal" class="btn btn-accent open_modal">Стать дилером</a>
+          <a href="#about-brand" class="btn btn-gray go_to">
+            <span>О бренде</span>
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="home-image"><img src="img/home-image.png" alt=""></div>
     </div>
   </main>
 
@@ -77,6 +128,7 @@
             </div>
           </div>
 
+
           <div class="col-6 col-xs-12 mb-32">
             <div class="advantages-box decor-box">
               <div class="advantages-box__icon"><img src="img/adv-icon4.svg" alt=""></div>
@@ -97,7 +149,11 @@
   <div class="section-banner about-brand m-160" id="about-brand">
     <div class="container">
       <h2>Вы ищете бренд, которому можно доверять и на котором можно зарабатывать?</h2>
+    </div>
+    <div class="container-fluid">
       <div class="section-banner__img"><img src="img/banner1.png" alt=""></div>
+    </div>
+    <div class="container">
 
       <div class="about-brand-box decor-box">
         <h3 class="about-brand-box__title">Нет имени - нет продаж?</h3>
@@ -128,110 +184,393 @@
         <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
         <h2>бренд, который начинался <br>
           не в офисе, а в дороге</h2>
-          <div class="w-100">
-            <div class="row">
-              <div class="col-6">
-                <div class="box-text text-big text-right">
-                  <p>Всё началось в 2003 году, когда брат с сестрой – сами мотоциклисты – начали создавать экипировку, которой не хватало им и их друзьям.</p>
-                </div>
+        <div class="w-100">
+          <div class="row">
+            <div class="col-6">
+              <div class="box-text text-big text-right">
+                <p>Всё началось в 2003 году, когда брат с сестрой – сами мотоциклисты – начали создавать экипировку,
+                  которой не хватало им и их друзьям.</p>
               </div>
-              <div class="col-6">
-                <div class="box-text text-big">
-                  <p>В 2004 году они впервые подали заявку на регистрацию бренда. Это был один из первых китайских брендов мотозащиты, родившийся не в офисе, а в дороге. Тогда прозвучал первый слоган: «Пусть наши поездки станут безопаснее».</p>
-                </div>
+            </div>
+            <div class="col-6">
+              <div class="box-text text-big">
+                <p>В 2004 году они впервые подали заявку на регистрацию бренда. Это был один из первых китайских брендов
+                  мотозащиты, родившийся не в офисе, а в дороге. Тогда прозвучал первый слоган: «Пусть наши поездки
+                  станут безопаснее».</p>
               </div>
             </div>
           </div>
+        </div>
       </div>
+    </div>
 
+    <div class="container-fluid">
       <div class="brand-slider">
         <div class="slide">
-          <a href="img/slide1.png" class="brand-slider__item" data-fancybox="gallery"><img src="img/slide1.png" alt=""></a>
+          <a href="img/slide1.png" class="brand-slider__item" data-fancybox="gallery"><img src="img/slide1.png"
+              alt=""></a>
         </div>
         <div class="slide">
-          <a href="img/slide1.png" class="brand-slider__item" data-fancybox="gallery"><img src="img/slide1.png" alt=""></a>
+          <a href="img/slide2.png" class="brand-slider__item" data-fancybox="gallery"><img src="img/slide2.png"
+              alt=""></a>
         </div>
         <div class="slide">
-          <a href="img/slide1.png" class="brand-slider__item" data-fancybox="gallery"><img src="img/slide1.png" alt=""></a>
+          <a href="img/slide3.png" class="brand-slider__item" data-fancybox="gallery"><img src="img/slide3.png"
+              alt=""></a>
         </div>
         <div class="slide">
-          <a href="img/slide1.png" class="brand-slider__item" data-fancybox="gallery"><img src="img/slide1.png" alt=""></a>
+          <a href="img/slide4.png" class="brand-slider__item" data-fancybox="gallery"><img src="img/slide4.png"
+              alt=""></a>
         </div>
         <div class="slide">
-          <a href="img/slide1.png" class="brand-slider__item" data-fancybox="gallery"><img src="img/slide1.png" alt=""></a>
+          <a href="img/slide5.png" class="brand-slider__item" data-fancybox="gallery"><img src="img/slide5.png"
+              alt=""></a>
         </div>
         <div class="slide">
-          <a href="img/slide1.png" class="brand-slider__item" data-fancybox="gallery"><img src="img/slide1.png" alt=""></a>
+          <a href="img/slide6.png" class="brand-slider__item" data-fancybox="gallery"><img src="img/slide6.png"
+              alt=""></a>
+        </div>
+        <div class="slide">
+          <a href="img/slide7.png" class="brand-slider__item" data-fancybox="gallery"><img src="img/slide7.png"
+              alt=""></a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="">
+  <section class="company-today m-160">
     <div class="container">
+      <div class="w-100">
+        <div class="row">
+          <div class="col-6">
+            <h2>Lyschy Сегодня</h2>
+          </div>
+          <div class="col-6">
+            <h3>– это результат двух десятилетий работы: производство с современным оборудованием, реальные полевые
+              тесты, постоянные улучшения на основе отзывов. </h3>
+            <h3>Каждый элемент экипировки проверяется на водостойкость, прочность и комфорт.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="container-fluid">
+      <a href="https://youtu.be/7PIji8OubXU?si=6dnqlWHLR0-Hkw0u" class="video-wrapper w-100" data-fancybox="video"><img
+          src="img/video-preview.png" alt=""></a>
     </div>
   </section>
 
-  <section class="">
-    <div class="container">
+  <section class="company-slogan">
+    <div class="container-fluid">
+      <div class="company-slogan-wrapper">
+        <div class="company-slogan-content">
+          <div class="box-text text-big">
+            <p>Слоган компании</p>
+          </div>
 
+          <div class="h1">Enjoy
+            ourselves</div>
+
+          <h3>Наслаждайся</h3>
+          <div class="box-text text-big">
+            <p>— потому что свобода, удовольствие и безопасность в поездке это то, ради чего всё начиналось</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="">
-    <div class="container">
+  <section class="section-banner philosophy-brand m-160">
+    <div class="container-fluid">
+      <div class="section-banner__img"><img src="img/banner3.png" alt=""></div>
+    </div>
 
+    <div class="container">
+      <div class="start-brand-wrapper">
+        <h2>Философия бренда отражена <br>
+          в названии и логотипе</h2>
+        <a href="index.html" class="logo"><img src="img/logo-black.svg" alt=""></a>
+        <div class="w-100">
+          <div class="row">
+            <div class="col-6">
+              <h3>Lyschy - это слияние двух первичных сил - рассекающей небо молнии, предвестницы грома, словно
+                вызванного рёвом мотоцикла, и полёта, когда байк срывается с места и стремится к горизонту.</h3>
+            </div>
+            <div class="col-6">
+              <div class="box-text text-big">
+                <p>В восточных легендах громом управляют драконы, как нынче бесстрашные байкеры управляют своей
+                  громогласной техникой, и логотип содержит в себе отсылку - он похож одновременно на яркую молнию и
+                  гибкий хребет дракона, его крыло перед взмахом, чтобы унестись ввысь, и крепкую зубчатую драконью
+                  чешую.</p>
+                <p>В следующий раз, когда увидите молнию, посмотрите внимательнее - и заметите блеск чешуи и
+                  стремительный росчерк крыла дракона, её оседлавшего.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="">
-    <div class="container">
-
+  <section class="equipment-section">
+    <div class="container-fluid">
+      <div class="equipment-image"><img src="img/equipment-img.jpg" alt=""></div>
+      <div class="equipment-content">
+        <div class="equipment-box decor-box">
+          <h2>Экипировка <br>
+            с характером</h2>
+        </div>
+        <div class="equipment-box decor-box">
+          <div class="h2">История, которой <br>
+            можно гордиться</div>
+        </div>
+        <div class="equipment-box decor-box">
+          <div class="h2">Качество, которое <br>приносит прибыль</div>
+        </div>
+      </div>
     </div>
   </section>
 
 
-  <section class="">
-    <div class="container">
+  <section class="catalog-section m-160">
+    <div class="container-fluid">
+      <div class="title-wrapper">
+        <h2>Каталог Lyschy</h2>
+        <a href="#" class="btn btn-accent">Смотреть каталог</a>
+      </div>
 
+      <div class="box-text text-big m-64 text-center color-gray">
+        <p>Линейка Lyschy – это то, что выбирают не просто за стиль, но и за высокое качество
+          по доступным ценам как новичкам, так и опытным мотоциклистам.</p>
+      </div>
+
+      <div class="catalog-wrapper">
+        <div class="product-card">
+          <a href="#" class="product-card__img"><img src="img/product1.jpg" alt=""></a>
+          <a href="#" class="product-card__name h3">Туристическая экипировка</a>
+        </div>
+        <div class="product-card">
+          <a href="#" class="product-card__img"><img src="img/product2.jpg" alt=""></a>
+          <a href="#" class="product-card__name h3">Городская экипировка</a>
+        </div>
+        <div class="product-card">
+          <a href="#" class="product-card__img"><img src="img/product3.jpg" alt=""></a>
+          <a href="#" class="product-card__name h3">Женская экипировка</a>
+        </div>
+        <div class="product-card">
+          <a href="#" class="product-card__img"><img src="img/product4.jpg" alt=""></a>
+          <a href="#" class="product-card__name h3">Перчатки</a>
+        </div>
+        <div class="product-card">
+          <a href="#" class="product-card__img"><img src="img/product5.jpg" alt=""></a>
+          <a href="#" class="product-card__name h3">Защита тела</a>
+        </div>
+        <div class="product-card">
+          <a href="#" class="product-card__img"><img src="img/product6.jpg" alt=""></a>
+          <a href="#" class="product-card__name h3">Защита локтей и коленей</a>
+        </div>
+        <div class="product-card">
+          <a href="#" class="product-card__img"><img src="img/product7.png" alt=""></a>
+          <a href="#" class="product-card__name h3">Дождевики и бахилы</a>
+        </div>
+        <div class="product-card">
+          <a href="#" class="product-card__img"><img src="img/product8.jpg" alt=""></a>
+          <a href="#" class="product-card__name h3">Подшлемники и виндстоперы</a>
+        </div>
+        <div class="product-card">
+          <a href="#" class="product-card__img"><img src="img/product9.jpg" alt=""></a>
+          <a href="#" class="product-card__name h3">Аксессуары</a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="">
+  <section class="reasons-section">
     <div class="container">
-
+      <h2>Причины, по которым наши
+        дилеры выбирают Lyschy</h2>
+      <div class="w-100">
+        <div class="row">
+          <div class="col-3 mb-64">
+            <div class="box-text decor-box">
+              <p>Оптимальный ассортимент продуманной экипировки с качественными материалами и надежной защитой</p>
+            </div>
+          </div>
+          <div class="col-3 mb-64">
+            <div class="box-text decor-box">
+              <p>Компания Lyschy тщательно следит за качеством своей продукции, сводя количество брака к минимуму</p>
+            </div>
+          </div>
+          <div class="col-3 mb-64">
+            <div class="box-text decor-box">
+              <p>Все характеристики экипировки подтверждены соответствующими документами, сертификатами и реальными
+                тестами</p>
+            </div>
+          </div>
+          <div class="col-3 mb-64">
+            <div class="box-text decor-box">
+              <p>Lyschy собирает отзывы о своих изделиях и на их основе постоянно улучшает качество как новинок, так и
+                обновленных известных моделей - отличное ориентирование на прямую работу с дилерами, обратную связь</p>
+            </div>
+          </div>
+          <div class="col-3 mb-64">
+            <div class="box-text decor-box">
+              <p>У Lyschy одна из лучших ценовых политик, которая несоизмерима с высоким качеством товаров, что
+                оставляет покупателей довольными соотношением “цена-качество”</p>
+            </div>
+          </div>
+          <div class="col-3 mb-64">
+            <div class="box-text decor-box">
+              <p>Купив продукцию Lyschy однажды, клиенты заинтересованно возвращаются за новинками, обеспечивая таким
+                образом повторные продажи</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="">
+  <section class="reviews-section m-160">
     <div class="container">
-
+      <h2></h2>
     </div>
   </section>
 
-  <section class="">
-    <div class="container">
-
+  <section class="partner-section m-160">
+    <div class="container-fluid">
+      <div class="company-slogan-wrapper w-100">
+        <div class="company-slogan-content partner-content">
+          <a href="#" class="logo-partner"><img src="img/partner-logo.png" alt=""></a>
+          <h2>Freeridermoto
+            – ваш партнёр в мире мотопродаж</h2>
+          <div class="box-text text-bix color-gray">
+            <p>Мы работаем с 2017 года. Десятки брендов, тысячи довольных клиентов, постоянные партнёры по всей стране.
+            </p>
+            <p>Теперь мы – официальный дистрибьютор Lyschy в России.</p>
+          </div>
+          <a href="#" class="btn btn-accent">Связаться с нами</a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <div class="section-banner">
+  <section class="result-section">
     <div class="container">
-      <div class="section-banner__img"><img src="img/banner2.png" alt=""></div>
+      <h2>Что вы получаете:</h2>
+      <div class="w-100">
+        <div class="row">
+          <div class="col-3 mb-64">
+            <div class="box-text decor-box">
+              <h3>Доступ к оптовым ценам на продукцию с высоким спросом</h3>
+            </div>
+          </div>
+          <div class="col-3 mb-64">
+            <div class="box-text decor-box">
+              <h3>Ассортимент, <br>сформированный <br>байкерами <br>
+                для байкеров</h3>
+            </div>
+          </div>
+          <div class="col-3 mb-64">
+            <div class="box-text decor-box">
+              <h3>Маркетинговые материалы, описания, история бренда — всё, что нужно для продаж</h3>
+            </div>
+          </div>
+          <div class="col-3 mb-64">
+            <div class="box-text decor-box">
+              <h3>Прозрачные условия и постоянную связь</h3>
+            </div>
+          </div>
+          <div class="col-3 mb-64">
+            <div class="box-text decor-box">
+              <h3>Быструю отгрузку со склада в России</h3>
+            </div>
+          </div>
+          <div class="col-3 mb-64">
+            <div class="box-text decor-box">
+              <h3>Lyschy уже врывается на рынок – успейте стать дилером в вашем регионе</h3>
+            </div>
+          </div>
+          <div class="col-3 mb-64">
+            <div class="box-text decor-box">
+              <h3>Техническую поддержку и консультации</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="one-in-region">
+    <div class="container-fluid">
+      <div class="section-banner__img"><img src="img/banner4.png" alt=""></div>
+    </div>
+    <div class="container">
+      <div class="w-100">
+        <div class="row">
+          <div class="col-6">
+            <h2>Станьте первым дилером бренда Lyschy в своём регионе!</h2>
+          </div>
+          <div class="col-6">
+            <div class="one-in-region__content">
+              <h3>Этот бренд уже прочно
+                обосновался на рынке Азии.
+                Теперь он и в России</h3>
+
+              <h3>Вы можете быть среди первых,
+                кто на этом заработает</h3>
+
+              <h3>Решайтесь!</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="callback-section m-160">
+    <div class="container">
+      <form method="post" class="form-callback form w-100">
+        <div class="col-6 mb-32">
+          <label><input type="text" placeholder="Ваше имя" name="name"></label>
+        </div>
+        <div class="col-6 mb-32">
+          <label class="label-phone"><span class="label-icon"><img src="img/flag.png" alt=""></span><input type="text"
+              placeholder="+7 (___) ___-__-__" name="phone" required></label>
+        </div>
+        <label><textarea name="message"
+            placeholder="Если у Вас есть пожелания, вопросы или вы определились с товаром, укажите данную информацию здесь, это ускорит процесс оформления."></textarea></label>
+        <button type="submit" class="btn btn-accent w-100 btn-submit">Стать дилером</button>
+        <div class="consent">
+          <p>Нажимая кнопку «Стать дилером» Вы даете согласие на обработку Ваших персональных данных в соответствии с
+            Политикой конфиденциальности</p>
+        </div>
+      </form>
     </div>
   </div>
 
-  <footer>
+  <section class="question-section m-160">
     <div class="container">
+      <h2>частые вопросы</h2>
+
+
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container-fluid">
+      <div class="section-banner__img"><img src="img/banner2.png" alt=""></div>
+    </div>
+
+    <div class="container-fluid">
 
     </div>
   </footer>
 
   <!-- add plugins js-->
   <script src="js/jquery.min.js"></script>
-  <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
   <script src="js/slick.min.js"></script>
+  <script src="js/fancybox.umd.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
   <!-- add plugins js end-->
 

@@ -132,13 +132,35 @@ button, .btn
   height: 72px
   border-radius: 0
   transition: 0.3s ease
+  .svg-icon
+    min-width: 23px
+    width: 23px
+    height: 22px
+    @include d-flex
+    stroke: #fff
+    margin: 0 0 0 10px
+
+.btn-gray
+  background: $gray
+  color: #fff
+  &:hover, &:focus
+    background: $accent
+    color: #fff
 
 .btn-accent
   background: $accent
   color: #fff
   &:hover, &:focus
     background: $gray
-    color: #fff  
+    color: #fff
+
+.btn-group
+  display: flex
+  align-items: flex-start
+  .btn
+    margin: 0 10px 0 0
+    &:last-child
+      margin: 0
 
 .svg-icon
   display: inline-block
@@ -169,10 +191,13 @@ ul, ol
 
 .container-fluid
   max-width: 100%
-    
+  padding: 0 32px
+  display: flex
+  flex-wrap: wrap
+  align-items: center
 
 .w-100
-  width: 100%  
+  width: 100%
 
 .row
   display: flex
@@ -180,16 +205,28 @@ ul, ol
   align-items: stretch
   margin: 0 -32px
 
+.col-3  
+  max-width: 33.333%
+  flex: 0 0 33.333%
+  padding: 0 32px  
+
 .col-6
   max-width: 50%
   flex: 0 0 50%
-  padding: 0 32px  
+  padding: 0 32px
 
 
-h1
-  width: 100%  
 
-h2
+h1, .h1
+  width: 100%
+  margin: 25px 0 64px
+  font-family: $title-font
+  font-weight: 600
+  font-size: 44px
+  line-height: 114%
+  text-transform: uppercase
+
+h2, .h2
   width: 100%
   font-family: $title-font
   font-size: 84px
@@ -197,43 +234,58 @@ h2
   line-height: 105%
   text-transform: uppercase
   text-align: center
-  margin: 0 auto 64px  
+  margin: 0 auto 64px
 
-h3
+h3, .h3
   text-transform: uppercase
   font-size: 44px
   line-height: 110%
   font-weight: 600
   font-family: $title-font
-  width: 100%  
+  width: 100%
+
+.box-text
+  font-size: 24px
+  line-height: 100% 
+  p
+    margin: 0 0 30px
+    &:last-child
+      margin: 0 
 
 .text-big
   font-size: 28px
   line-height: 100%
+  p
+    margin: 0 0 30px
+    &:last-child
+      margin: 0
 
 .color-gray
-  color: $gray  
+  color: $gray
 
 .m-auto
-  margin: 0 auto    
+  margin: 0 auto
 
 .mb-32
-  margin-bottom: 32px  
+  margin-bottom: 32px
+
+.mb-64
+  margin-bottom: 64px  
 
 .m-64
-  margin: 64px 0  
+  margin: 64px 0
 
 .m-160
-  margin: 160px 0  
+  margin: 160px 0
 
 .text-center
   text-align: center
 
 .text-right
-  text-align: right  
+  text-align: right
 
 .text-transform
-  text-transform: uppercase 
+  text-transform: uppercase
 
 .decor-box
   position: relative
@@ -248,13 +300,76 @@ h3
     transform: skew(30deg)
     background: $accent
 
-
-
 .slick-slider
   width: 100%
 
+.slick-arrow
+  position: absolute
+  z-index: 1
+  top: 50%
+  transform: translate(0,-50%)
+  cursor: pointer
+  width: 63px
+  height: 63px
+  min-width: 63px
+  background: #fff
+  border-radius: 50%
+  stroke: #000
+  fill: none
+  padding: 5px
+  @include d-flex
+  svg
+    width: 11px
+    height: 22px
+  &:hover, &:focus
+    background: $accent
+    stroke: #fff
+
+.slick-next
+  left: 47px
+
+.slick-prev
+  right: 47px
+
 .slick-slide
   outline: none
+
+.slick-dots
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  margin: 64px auto 0
+  z-index: 1
+  opacity: 1
+  bottom: 0
+  padding: 0
+  list-style: none
+  li
+    cursor: pointer
+    transition: .3s ease
+    width: 9.5px
+    height: 9.5px
+    margin: 0 12px 0 0
+    opacity: 0.4
+    background: #fff
+    border-radius: 50%
+    &:last-child
+      margin: 0
+    &.slick-active
+      opacity: 1
+    button
+      display: none
+    &:hover
+      background: $accent
+
+.title-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
 
 //checkbox my
 .label-checkbox

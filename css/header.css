@@ -1,0 +1,60 @@
+header {
+  padding: 20px 0;
+  color: #fff;
+  font-family: "Akrobat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.distribution-name {
+  display: flex;
+  align-items: center;
+  color: #9699A1;
+  margin: 0 auto 0 0;
+}
+.distribution-name span {
+  margin: 0 0 0 6px;
+}
+.distribution-name a {
+  font-size: 24px;
+  color: #fff;
+}
+.distribution-name a:hover {
+  color: #E80014;
+}
+
+.link-web {
+  display: flex;
+  align-items: center;
+  margin: 0 40px 0 0;
+  text-transform: uppercase;
+  color: #9699A1;
+}
+.link-web:hover {
+  color: #E80014;
+}
+
+.link-messanger {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  fill: #fff;
+  font-size: 24px;
+  margin: 0 0 0 40px;
+}
+.link-messanger svg {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link-messanger span {
+  margin: 0 0 0 10px;
+}
+.link-messanger:hover {
+  color: #E80014;
+  fill: #E80014;
+}

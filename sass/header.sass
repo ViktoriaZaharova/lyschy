@@ -1,2 +1,51 @@
 @import "vars"
 
+header
+  padding: 20px 0
+  color: #fff
+  font-family: $title-font
+  text-transform: uppercase
+  font-weight: 600
+  font-size: 18px
+
+    
+
+.distribution-name
+  display: flex
+  align-items: center
+  color: #9699A1
+  margin: 0 auto 0 0
+  span
+    margin: 0 0 0 6px
+  a
+    font-size: 24px
+    color: #fff
+    &:hover
+      color: $accent
+
+.link-web
+  display: flex
+  align-items: center
+  margin: 0 40px 0 0
+  text-transform: uppercase
+  color: #9699A1
+  &:hover
+    color: $accent
+
+.link-messanger
+  display: flex
+  align-items: center
+  color: #fff
+  fill: #fff
+  font-size: 24px
+  margin: 0 0 0 40px
+  svg
+    width: 24px
+    height: 24px
+    min-width: 24px
+    @include d-flex
+  span
+    margin: 0 0 0 10px
+  &:hover
+    color: $accent
+    fill: $accent
