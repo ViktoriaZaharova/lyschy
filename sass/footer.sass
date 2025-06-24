@@ -1,5 +1,10 @@
 @import "vars"
 
+.logo-footer
+  width: 100%
+  max-width: 257px
+  @include d-flex
+
 .footer-bottom
   margin: 64px 0
   .container-fluid
@@ -49,7 +54,7 @@
   align-items: flex-start
   padding: 0 0 32px
   margin: 0 0 32px
-  border-bottom: 2px solid #D9D9D9
+  border-bottom: 2px solid rgba(#D9D9D9, .1)
   font-size: 24px
   a
     color: #fff
