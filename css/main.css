@@ -392,6 +392,63 @@
 
 .reviews-box {
   width: 100%;
+  font-size: 24px;
+}
+.reviews-box__body {
+  position: relative;
+  z-index: 1;
+  background: #FAFAFA;
+  border-radius: 10px;
+  padding: 32px;
+  color: #000;
+  font-size: 28px;
+}
+.reviews-box__body .box-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+.reviews-box__body .link {
+  margin: 32px 0 0;
+  color: #000;
+}
+.reviews-box__body .link:hover {
+  color: #E80014;
+}
+.reviews-box__body::before {
+  content: "";
+  position: absolute;
+  left: -11px;
+  bottom: 10px;
+  width: 11px;
+  height: 20px;
+  background: url("../img/reviews-figure.svg") no-repeat center;
+  background-size: 100%;
+}
+.reviews-box__footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 32px 0 0;
+}
+.reviews-box__avatar {
+  width: 95px;
+  height: 95px;
+  min-width: 95px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 32px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reviews-box__avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .callback-section .form-callback .col-12, .callback-section .form-callback .col-6 {

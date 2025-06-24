@@ -320,13 +320,13 @@
   opacity: 0.7
 
 // reviews
-.reviews-slider 
+.reviews-slider
   .slide
-    padding: 0 32px   
+    padding: 0 32px
   .slick-prev
     right: -160px
   .slick-next
-    left: -160px     
+    left: -160px
 
 .reviews-card
   width: 100%
@@ -334,11 +334,56 @@
     width: 100%
 
 .reviews-box
-  width: 100%    
+  width: 100%
+  font-size: 24px
+  &__body
+    position: relative
+    z-index: 1
+    background: #FAFAFA
+    border-radius: 10px
+    padding: 32px
+    color: #000
+    font-size: 28px
+    .box-text
+      overflow: hidden
+      text-overflow: ellipsis
+      display: -webkit-box
+      -webkit-line-clamp: 6
+      -webkit-box-orient: vertical
+    .link
+      margin: 32px 0 0
+      color: #000
+      &:hover
+        color: $accent
+    &::before
+      content: ''
+      position: absolute
+      left: -11px
+      bottom: 10px
+      width: 11px
+      height: 20px
+      background: url('../img/reviews-figure.svg') no-repeat center
+      background-size: 100%
+  &__footer
+    display: flex
+    align-items: center
+    width: 100%
+    margin: 32px 0 0
+  &__avatar
+    width: 95px
+    height: 95px
+    min-width: 95px
+    overflow: hidden
+    border-radius: 50%
+    margin: 0 32px 0 0
+    @include d-flex 
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover     
 
 // callback section
 .callback-section
   .form-callback
     .col-12, .col-6
       padding: 0 16px
-   

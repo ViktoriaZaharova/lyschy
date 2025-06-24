@@ -720,37 +720,87 @@
 
 
   <footer>
-    <div class="container-fluid">
-      <div class="section-banner__img"><img src="img/banner2.png" alt=""></div>
+    <div class="footer-top w-100">
+      <div class="container-fluid">
+        <div class="section-banner__img"><img src="img/banner2.png" alt=""></div>
+      </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="footer-bottom w-100">
+      <div class="container-fluid">
+        <div class="footer-box">
+          <a href="index.html" class="logo-footer"><img src="img/logo.svg" alt=""></a>
+          <a href="#" class="link-footer text-decoration" target="_blank">Политика конфиденциальности</a>
+          <div class="copyright">
+            <p>2025 © Freeridermoto
+            </p>
+            <span>Официальный дистрибьютор Lyschy в России</span>
+          </div>
+        </div>
 
+        <div class="footer-contacts">
+          <div class="footer-contacts-item">
+            <p>Телефон</p>
+            <a href="tel:+79265559728">+7 926 555-97-28</a>
+          </div>
+          <div class="footer-contacts-item">
+            <p>Почта</p>
+            <a href="mailto:opt@freeridermoto.ru">opt@freeridermoto.ru</a>
+          </div>
+          <div class="footer-contacts-item">
+            <p>Сайт</p>
+            <a href="https://freeridermoto.ru">freeridermoto.ru</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <a href="#callbackModal" class="btn btn-gray open_modal w-100">Стать дилером</a>
+          <a href="#" class="link-developer" target="_blank">Разработано в <strong>Lynxoft</strong></a>
+        </div>
+      </div>
     </div>
+
   </footer>
 
 
   <!-- modal -->
-<div class="modal__div" id="callback__modal">
+  <div class="modal__div" id="callbackModal">
     <div class="modal__wrapper">
-        <span class="modal__close"><i class="fa fa-times" aria-hidden="true"></i></span>
-        <h2>Обратный звонок</h2>
+      <span class="modal__close"><i class="fa fa-times" aria-hidden="true"></i></span>
+      <h2>Обратный звонок</h2>
 
-        <form method="post" class="callback__form modal-form">
+      <form method="post" class="callback__form modal-form">
 
-            <label><input type="text" name="name" placeholder="Ваше имя"></label>
+        <label><input type="text" name="name" placeholder="Ваше имя"></label>
 
-            <label><input type="text" name="phone" placeholder="Ваш телефон" required></label>
+        <label><input type="text" name="phone" placeholder="Ваш телефон" required></label>
 
-            <label class="label-message"><textarea name="message"
-                                                   placeholder="Введите Ваше сообщение"></textarea></label>
+        <label class="label-message"><textarea name="message" placeholder="Введите Ваше сообщение"></textarea></label>
 
-            <button type="submit" class="btn-accent"><span class="wrapper">Отправить</span></button>
-        </form>
+        <button type="submit" class="btn-accent"><span class="wrapper">Отправить</span></button>
+      </form>
     </div>
-</div>
+  </div>
 
-<div class="overlay"></div>
+    <div class="modal__div" id="reviewsModal1">
+    <div class="modal__wrapper">
+      <span class="modal__close"><i class="fa fa-times" aria-hidden="true"></i></span>
+      <h2>Обратный звонок</h2>
+
+      <form method="post" class="callback__form modal-form">
+
+        <label><input type="text" name="name" placeholder="Ваше имя"></label>
+
+        <label><input type="text" name="phone" placeholder="Ваш телефон" required></label>
+
+        <label class="label-message"><textarea name="message" placeholder="Введите Ваше сообщение"></textarea></label>
+
+        <button type="submit" class="btn-accent"><span class="wrapper">Отправить</span></button>
+      </form>
+    </div>
+  </div>
+
+  <div class="overlay"></div>
 
 
   <!-- add plugins js-->
