@@ -343,7 +343,7 @@ h3, .h3 {
   line-height: 100%;
 }
 .box-text p {
-  margin: 0 0 30px;
+  margin: 0 0 32px;
 }
 .box-text p:last-child {
   margin: 0;
@@ -354,7 +354,7 @@ h3, .h3 {
   line-height: 100%;
 }
 .text-big p {
-  margin: 0 0 30px;
+  margin: 0 0 32px;
 }
 .text-big p:last-child {
   margin: 0;

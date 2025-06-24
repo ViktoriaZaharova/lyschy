@@ -7,7 +7,8 @@
 
 .footer-column {
   margin: 0 0 0 auto;
-  max-width: 719px;
+  max-width: calc(50% - 135px);
+  padding: 0 0 0 64px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -47,8 +48,8 @@
 }
 
 .footer-contacts {
-  margin: 0 0 0 64px;
-  max-width: 719px;
+  max-width: calc(50% - 135px);
+  padding: 0 0 0 64px;
   width: 100%;
 }
 
