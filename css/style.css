@@ -102,23 +102,22 @@ input, textarea, select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  padding: 0 15px;
+  padding: 32px;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   border: none;
-  border-radius: 10px;
+  border-radius: 0;
   width: 100%;
-  height: 54px;
-  background: transparent;
+  background: #fff;
   color: #000;
-  font-size: 15px;
+  font-size: 24px;
   cursor: pointer;
 }
 input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
-  color: #595959;
+  color: rgba(0, 0, 0, 0.5);
 }
 input::placeholder, textarea::placeholder, select::placeholder {
-  color: #595959;
+  color: rgba(0, 0, 0, 0.5);
 }
 input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:focus {
   outline: none;
@@ -144,10 +143,27 @@ label:last-child {
   margin: 0;
 }
 
+.label-phone {
+  position: relative;
+  z-index: 1;
+}
+.label-phone input {
+  padding: 32px 32px 32px 86px;
+}
+
+.label-icon {
+  position: absolute;
+  left: 32px;
+  top: 32px;
+  max-width: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 textarea {
   resize: none;
-  padding: 12px 17px;
-  height: 103px;
+  height: 122px;
 }
 
 button, .btn {
@@ -282,6 +298,12 @@ ul, ol {
   padding: 0 32px;
 }
 
+.col-12 {
+  padding: 0 32px;
+  max-width: 100%;
+  flex: 0 0 100%;
+}
+
 h1, .h1 {
   width: 100%;
   margin: 25px 0 64px;
@@ -348,6 +370,10 @@ h3, .h3 {
 
 .mb-64 {
   margin-bottom: 64px;
+}
+
+.mb-128 {
+  margin-bottom: 128px;
 }
 
 .m-64 {
@@ -469,6 +495,52 @@ h3, .h3 {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.panel_heading {
+  background: #9699A1;
+  width: 100%;
+  margin: 0 0 3px;
+  color: #000;
+  padding: 32px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.panel_heading:last-child {
+  margin: 0;
+}
+.panel_heading .block_title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.panel_heading .block_title:after {
+  content: "";
+  margin: 0 0 0 auto;
+  width: 16px;
+  height: 10px;
+  background: url("../img/arrow-bottom.svg") no-repeat center;
+  background-size: cover;
+}
+.panel_heading .block_hover {
+  display: none;
+  width: 100%;
+  padding: 32px 0 0;
+}
+.panel_heading.in {
+  background: #fff;
+}
+.panel_heading.in .blodk_hover {
+  display: block;
+}
+.panel_heading.in .block_title::after {
+  transform: rotate(180deg);
+}
+.panel_heading h4 {
+  font-size: 28px;
+  font-weight: bold;
+  width: 100%;
+  margin: 0;
 }
 
 .label-checkbox {

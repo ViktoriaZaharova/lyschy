@@ -312,6 +312,22 @@
   background: url("../img/partner-bg.png") no-repeat center;
   background-size: cover;
 }
+.partner-section h2 {
+  text-align: left;
+}
+.partner-section .box-text {
+  margin: 0 0 64px;
+}
+
+.logo-partner {
+  max-width: 253px;
+  width: 100%;
+  margin: 0 0 64px;
+}
+
+.partner-content {
+  max-width: 665px;
+}
 
 .result-section {
   margin: 110px 0;
@@ -353,4 +369,31 @@
 
 .consent {
   margin: 32px 0 0;
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+.reviews-slider .slide {
+  padding: 0 32px;
+}
+.reviews-slider .slick-prev {
+  right: -160px;
+}
+.reviews-slider .slick-next {
+  left: -160px;
+}
+
+.reviews-card {
+  width: 100%;
+}
+.reviews-card img {
+  width: 100%;
+}
+
+.reviews-box {
+  width: 100%;
+}
+
+.callback-section .form-callback .col-12, .callback-section .form-callback .col-6 {
+  padding: 0 16px;
 }
