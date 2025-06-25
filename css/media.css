@@ -264,6 +264,15 @@
   .m-160 {
     margin: 64px 0;
   }
+  .box-text {
+    font-size: 14px;
+  }
+  .box-text p {
+    margin: 0 0 16px;
+  }
+  .box-text p:last-child {
+    margin: 0;
+  }
   .text-big {
     font-size: 16px;
   }
@@ -295,7 +304,7 @@
     max-width: 361px;
   }
   .advantages {
-    margin: 96px 0 64px;
+    margin: 96px 0 32px;
   }
   .advantages-box {
     padding: 22px 0 0;
@@ -375,15 +384,6 @@
   .reasons-section {
     padding: 64px 0 0;
   }
-  .box-text {
-    font-size: 14px;
-  }
-  .box-text p {
-    margin: 0 0 16px;
-  }
-  .box-text p:last-child {
-    margin: 0;
-  }
   .reviews-box__body {
     padding: 24px;
     font-size: 16px;
@@ -419,6 +419,9 @@
   }
   .mb-64 {
     margin-bottom: 32px;
+  }
+  .mb-128 {
+    margin-bottom: 64px;
   }
   .result-section {
     margin: 64px 0 32px;
@@ -468,6 +471,7 @@
   .footer-contacts {
     padding: 0 0 0 32px;
     width: calc(100% - 128.5px);
+    max-width: none;
   }
   .footer-contacts-item {
     font-size: 14px;
@@ -487,6 +491,175 @@
   .footer-column {
     padding: 0 0 0 32px;
     width: calc(100% - 128.5px);
+    max-width: none;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .container {
+    max-width: 768px;
+  }
+  .container-fluid {
+    padding: 0 32px;
+  }
+  header .container-fluid {
+    max-width: 768px;
+  }
+  .distribution-name span {
+    display: none;
+  }
+  .distribution-name a {
+    font-size: 18px;
+  }
+  .link-messanger {
+    margin: 0 20px 0 0;
+  }
+  .link-messanger:last-child {
+    margin: 0;
+  }
+  .logo {
+    max-width: 257px;
+  }
+  .home-image {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 0;
+    max-width: 433px;
+    z-index: 1;
+  }
+  .home {
+    overflow: visible;
+  }
+  .home::before {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0) 0%, rgba(4, 4, 4, 0.7) 95.78%), linear-gradient(360deg, rgba(0, 0, 0, 0) 0%, rgba(4, 4, 4, 0.6) 95.78%);
+  }
+  .home .logo {
+    margin: 0 auto;
+  }
+  h1, .h1 {
+    margin: 32px auto;
+    font-size: 28px;
+  }
+  h2, .h2 {
+    font-size: 40px;
+    margin: 0 auto 32px;
+  }
+  h3, .h3 {
+    font-size: 28px;
+  }
+  .col-3 {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+  .mb-32 {
+    margin-bottom: 16px;
+  }
+  .home-content {
+    position: relative;
+    z-index: 2;
+    max-width: none;
+    text-align: center;
+    width: 100%;
+    margin: 32px 0 -30px;
+  }
+  .home-content .btn-group {
+    width: 100%;
+    margin: 528px 0 0;
+  }
+  .home-content .btn-group .btn {
+    flex: 1;
+  }
+  .home-content h1 {
+    max-width: 530px;
+  }
+  .home-content .text-big {
+    max-width: none;
+    margin: 0 auto;
+  }
+  .about-brand {
+    margin: 0 0 64px;
+  }
+  .start-brand-wrapper {
+    max-width: 640px;
+    padding: 64px 32px;
+    background: url("../img/decor-bg1-3.svg") no-repeat center;
+    background-size: cover;
+  }
+  .company-today .col-6 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .company-today h2 {
+    text-align: left;
+    margin: 0 0 32px;
+  }
+  .video-wrapper::before {
+    width: 60px;
+    height: 60px;
+    background-size: 16px;
+  }
+  .company-slogan-wrapper {
+    padding: 32px;
+  }
+  .company-slogan .h1 {
+    font-size: 72px;
+  }
+  .philosophy-brand .start-brand-wrapper {
+    max-width: 640px;
+    background: url("../img/decor-bg2-3.svg") no-repeat center;
+    background-size: cover;
+    padding: 64px 32px;
+    margin: -60px auto 0;
+  }
+  .equipment-image {
+    max-width: 336px;
+  }
+  .equipment-content {
+    width: calc(100% - 336px);
+  }
+  .equipment-box {
+    margin: 0 0 16px;
+    padding: 22px 0 0;
+  }
+  .equipment-box:last-child {
+    margin: 0;
+  }
+  .catalog-section .text-big {
+    max-width: 704px;
+  }
+  .product-card {
+    padding: 0 1px;
+  }
+  .product-card__img {
+    height: 233px;
+  }
+  .reasons-section {
+    padding: 64px 0 32px;
+  }
+  .partner-section .company-slogan-wrapper {
+    padding: 32px 64px;
+  }
+  .one-in-region .section-banner__img {
+    margin: 0 0 32px;
+  }
+  .consent {
+    margin: 16px 0 0;
+    max-width: 600px;
+  }
+  .panel_heading .block_title:after {
+    width: 12px;
+    height: 7px;
+  }
+  .footer-column {
+    width: 140px;
+    padding: 0;
+  }
+  .footer-column .btn {
+    padding: 10px 3px;
+  }
+  .footer-contacts {
+    width: calc(100% - 150px - 270px);
+    padding: 0 32px;
   }
 }
 @media only screen and (max-width: 576px) {

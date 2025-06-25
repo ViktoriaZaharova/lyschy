@@ -28,6 +28,7 @@
 .link-developer {
   margin: auto 0 0 auto;
   color: #9699A1;
+  text-align: right;
 }
 .link-developer:hover {
   color: #E80014;

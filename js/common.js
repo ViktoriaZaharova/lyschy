@@ -33,6 +33,16 @@ $('.reviews-slider1').slick({
                 autoplaySpeed: 2000,
                 dots: true
             }
+        },
+        {
+            breakpoint: 850,
+            settings: {
+                slidesToShow: 2,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true
+            }
         }
     ]
 });
@@ -47,7 +57,17 @@ $('.reviews-slider2').slick({
             breakpoint: 1150,
             settings: {
                 arrows: false,
-                // autoplay: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 850,
+            settings: {
+                slidesToShow: 2,
+                arrows: false,
+                autoplay: true,
                 autoplaySpeed: 2000,
                 dots: true
             }
