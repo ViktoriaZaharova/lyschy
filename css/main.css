@@ -332,6 +332,9 @@
 .partner-section h2 {
   text-align: left;
 }
+.partner-section h2 br {
+  display: none;
+}
 .partner-section .box-text {
   margin: 0 0 64px;
 }

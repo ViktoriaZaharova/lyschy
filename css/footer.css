@@ -33,6 +33,9 @@
 .link-developer:hover {
   color: #E80014;
 }
+.link-developer strong {
+  margin: 0 0 0 5px;
+}
 
 .footer-logo {
   max-width: 257px;
@@ -89,7 +92,8 @@
 
 .modal__div {
   position: fixed;
-  width: 400px;
+  max-width: 800px;
+  width: 100%;
   height: 100%;
   top: 45%;
   left: 50%;
@@ -103,30 +107,92 @@
   opacity: 0;
 }
 
+.modal__div-reviews {
+  max-width: 900px;
+}
+.modal__div-reviews .modal-body {
+  padding: 64px;
+}
+.modal__div-reviews .modal__close {
+  display: flex;
+}
+.modal__div-reviews .reviews-box__footer {
+  font-size: 24px;
+  margin: 64px 0 0;
+}
+
 .modal__close {
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 20px;
+  top: 20px;
+  width: 24px;
+  height: 24px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  stroke: #9699A1;
+}
+.modal__close:hover {
+  stroke: #E80014;
 }
 
 .modal__wrapper {
   background: #fff;
+  color: #000;
   width: 100%;
   height: auto;
   overflow: auto;
   margin: 50px auto;
-  padding: 30px 40px;
   box-sizing: border-box;
   position: relative;
+}
+.modal__wrapper h2 {
+  margin: 0 auto 32px;
+}
+
+.modal-head {
+  position: relative;
+  z-index: 1;
+  background: #000;
+  width: 100%;
+  padding: 64px;
+}
+
+.logo-modal {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-body {
+  width: 100%;
+  padding: 64px;
+}
+
+.phone-modal {
+  margin: 32px auto;
+  color: #000;
+  text-align: center;
+}
+
+.form-modal input {
+  border: 1.5px solid #9699A1;
+}
+.form-modal [type=submit] {
+  height: 98px;
+  margin: 32px 0 0;
 }
 
 .overlay {
   z-index: 100;
   position: fixed;
   background-color: #000;
-  opacity: 0.8;
-  -moz-opacity: 0.8;
-  filter: alpha(opacity=80);
+  opacity: 0.4;
+  -moz-opacity: 0.4;
+  filter: alpha(opacity=40);
   width: 100%;
   height: 100%;
   top: 0;

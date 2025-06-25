@@ -170,6 +170,12 @@ textarea {
   height: 122px;
 }
 
+.label-title {
+  margin: 0 0 16px;
+  width: 100%;
+  font-size: 24px;
+}
+
 button, .btn {
   outline: none;
   transition: 0.3s ease;
@@ -337,6 +343,10 @@ h3, .h3 {
   font-weight: 600;
   font-family: "Akrobat", sans-serif;
   width: 100%;
+}
+
+.d-mobile {
+  display: none;
 }
 
 .box-text {

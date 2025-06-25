@@ -43,6 +43,16 @@ $('.reviews-slider1').slick({
                 autoplaySpeed: 2000,
                 dots: true
             }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true
+            }
         }
     ]
 });
@@ -71,9 +81,36 @@ $('.reviews-slider2').slick({
                 autoplaySpeed: 2000,
                 dots: true
             }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true
+            }
         }
     ]
 });
+
+
+// slick active
+$(window).on('load resize', function() {
+        if ($(window).width() < 600) {
+            $('.catalog-wrapper:not(.slick-initialized)').slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                variableWidth: true,
+                arrows: false
+            });
+        } else {
+            $(".catalog-wrapper.slick-initialized").slick("unslick");
+        }
+    });
+// slick active
 
 // Fancybox
 Fancybox.bind("[data-fancybox]", {
@@ -100,7 +137,7 @@ accordeon();
 $(function () {
     let overlay = $('.overlay'),
         open_modal = $('.open_modal'),
-        close = $('.modal__close, .overlay'),
+        close = $('.modal__close, .overlay, .btn-close-modal'),
         modal = $('.modal__div');
 
     open_modal.on('click', function (event) {

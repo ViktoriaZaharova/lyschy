@@ -38,8 +38,12 @@
             stroke-opacity="0.2" stroke-width="3.16667" stroke-linecap="round" />
     </symbol>
 
-    <symbol id="play-icon" viewBox="0 0 32 36">
-        <path d="M31.9219 18L0.744959 36L0.744961 -1.42619e-06L31.9219 18Z" />
+    <symbol id="close-icon" viewBox="0 0 24 24">
+        <g>
+            <path d="M5.58901 5.21177L19.1655 18.7882M5.58901 18.7882L19.1655 5.21177"
+                stroke-width="2.4" stroke-linecap="round" />
+        </g>
     </symbol>
+
 
 </svg>
